@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nemr-web-intel-os"
+version = "3.0.0"
+description = "Stealth HTTP Crawler, LLM Markdown & RAG Chunking Engine, Sitemap XML Parser, Tech/Contact Miner & SQLite Diff Monitor"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mahmoud ElNeMeR", email = "contact@elnemer-ai.com" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ElNeMeR70/nemr-web-intel-os"
+Repository = "https://github.com/ElNeMeR70/nemr-web-intel-os"
+
+[project.scripts]
+nemr-intel = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["core"]
